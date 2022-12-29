@@ -1,17 +1,16 @@
 import java.util.Scanner;;
 public class ProblemA {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int tCases=sc.nextInt();
-        while(tCases-->0){
-            long mul=1;
-            int n=sc.nextInt();
-            int val[]=new int[n];
-            for(int i=0;i<n;i++){
-                val[i]=sc.nextInt();
-                mul*=val[i];
-            }
-            System.out.println((mul+(n-1))*2022);
+    public static int count(int n) {
+        int c=0;
+        while(n>0){
+            n=n&(n-1);
+            c++;
         }
+        return c;
+
+    }
+    public static void main(String[] args) {
+        System.out.println(count(5));
     }
 }
+

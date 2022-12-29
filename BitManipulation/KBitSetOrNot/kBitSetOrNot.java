@@ -1,4 +1,4 @@
-package BitManipulation;
+package BitManipulation.KBitSetOrNot;
 
 public class kBitSetOrNot {
     public static boolean check(int n,int k) {
@@ -6,7 +6,6 @@ public class kBitSetOrNot {
         return (n&1)==1;
     }
     public static void main(String[] args) {
-        System.out.println(check(8, 2));
-        
+        System.out.println(check(8, 2)); 
     }
 }
