@@ -1,17 +1,12 @@
 package BitManipulation;
-
 import java.util.Arrays;
-
 public class MissingNumber {
     public static int Number(int arr[]) {
         Arrays.sort(arr);
         int res=0;
-        int one=0;
-        int two=0;
         for(int i=0;i<arr.length;i++){
             res=res^arr[i]^(i+1);
             if(i%2==0){
-                
             }
         }
         return res^(arr.length+1);
