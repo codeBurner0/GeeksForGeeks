@@ -3,20 +3,24 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class ProblemB {
-    public static void maxKelements(int[] arr, int k) {
-        long Myresult=0;
-        for(int i=0;i<k;i++){
-            Arrays.sort(arr);
-            Myresult+=(int)arr[arr.length-1];
-            arr[arr.length-1]=(int)Math.ceil((double)arr[arr.length-1]/3);
-            System.out.println(Myresult);
+    public static int RangePrime(String s1,String s2) {
+        int num=0;
+        int j=0;
+        for(int i=0;i<s2.length();i++){
+            char c=s2.charAt(i);
+            for(;j<s1.length();j++){
+                if(s1.charAt(j)==c){
+                    num++;
+                    break;
+                }
+            }
         }
-        
+        int res=s2.length()-num;
+        return res;
     }
     
 public static void main(String[] args) {
-    int[] arr={1,10,3,3,3};
-maxKelements(arr,3);
+    System.out.println(RangePrime("abcz","azdb"));
 }
 }
 

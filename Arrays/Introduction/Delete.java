@@ -9,7 +9,6 @@ public class Delete {
                         arr[j]=0;
                     }
                 }
-                // break; use when you want to  delete the first occurence. otherwise, avoid it.
             }
         }
         display(arr);
