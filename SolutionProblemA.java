@@ -23,7 +23,6 @@ public class SolutionProblemA {
         }else{
             System.out.println(sum-2*ankit[0]);
         }
-        
         }
     }
 }
