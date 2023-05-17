@@ -20,7 +20,7 @@ public class RemoveDuplicates {
         
     }
     public static void main(String[] args) {
-        int[] arr={22,4,3,3,3,3,5,5,56,6,7,7,9,8};
+        int[] arr={3,22,4,3,3,3,3,5,5,56,6,7,7,9,8};
         rdup(arr);
         System.out.println(Arrays.toString(arr));
     }
