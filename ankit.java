@@ -7,3 +7,7 @@ public class ankit {
         System.out.println("Your name is :"+s);
     }
 }
+
+
+
+
