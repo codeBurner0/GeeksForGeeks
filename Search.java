@@ -2,16 +2,15 @@ import java.util.Arrays;
 
 public class Search {
     public static void main(String[] args) {
-        int n=0000000000000000000000000001011;
-        int res=0;
-        for(int i=0;i<32;i++){
-            int ans=n%10;
-            if(ans==1){
-                res++;
+        int count=9;
+        String str=String.valueOf(count);
+        System.out.println(str.length());
+        int len=str.length();
+        for(int k=0;k<len-1;k++){
+            System.out.println(str.charAt(k));
             }
-            n=n/10;
-        }
-        System.out.println(res);
+
+        System.out.println(String.valueOf(count).charAt(0));
         
     }
 }
