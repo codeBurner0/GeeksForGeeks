@@ -2,15 +2,24 @@ import java.util.Arrays;
 
 public class Search {
     public static void main(String[] args) {
-        int count=9;
-        String str=String.valueOf(count);
-        System.out.println(str.length());
-        int len=str.length();
-        for(int k=0;k<len-1;k++){
-            System.out.println(str.charAt(k));
+        String s="34.0";
+        String bdot="";
+        char c='0';
+        int res=0;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)=='.'){
+                c=s.charAt(i+1);
+                break;
             }
-
-        System.out.println(String.valueOf(count).charAt(0));
+            bdot+=s.charAt(i);
+        }
+        res=Integer.parseInt(bdot);
+        System.out.println(c);
+        if((c-'0')<=5){
+            System.out.println(res);
+        }else{
+            System.out.println(res+1);
+        }
         
     }
 }
