@@ -1,4 +1,5 @@
 package LinkedList;
+
 class Node{
     int data;
     Node next;
@@ -7,6 +8,7 @@ class Node{
         next=null;
     }
 }
+
 public class SearchNode {
     static Node head;
     public static int  Search(int d) {
@@ -26,6 +28,7 @@ public class SearchNode {
         print(head.next);
         
     }
+    
     public static void main(String[] args) {
         Node newNode= new Node(10);
         Node newNode1= new Node(20);

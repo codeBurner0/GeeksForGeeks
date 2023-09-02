@@ -1,5 +1,7 @@
 package Strings;
 
+import java.util.Scanner;
+
 public class Pallindrome {
     public static boolean isPallindrome(String s) {
         int low=0;
@@ -14,7 +16,8 @@ public class Pallindrome {
         return true;
     }
     public static void main(String[] args) {
-        String s="anikna";
-        System.out.println(isPallindrome(s));
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        System.out.println(isPallindrome(str));
     }
 }
